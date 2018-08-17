@@ -20,13 +20,16 @@ $(document).ready(function() {
 
     elementArray.forEach(function(number) {
     console.log(number);
-    if (number === 6) {
-      $("#pleasework").text("BEEP");
+    if (number === 0) {
+      $("#pleasework").append(" BEEP");
       // $("#beepoutput").show();
     }
     else if (number === 12) {
       $("#pleasework").append(" " + number);
     }
+    // else if (number % 3 === 0) {
+    //   $("#pleasework").append("I'm sorry Dave");
+    // }
 
   });
 
