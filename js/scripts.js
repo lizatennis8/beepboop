@@ -20,11 +20,14 @@ $(document).ready(function() {
 
     elementArray.forEach(function(number) {
     console.log(number);
-    if (number === 0) {
+
+      if (number % 3 === 0) {
+      $("#pleasework").append(" I'm sorry, " + nameInput + ". I'm afraid I can't do that.");
+    } else if (number === 0) {
       $("#pleasework").append(" BEEP");
-      // $("#beepoutput").show();
-    }
-    else if (number === 12) {
+    } else if (number === 12) {
+      $("#pleasework").append(" BOOP");
+    } else {
       $("#pleasework").append(" " + number);
     }
     // else if (number % 3 === 0) {
