@@ -20,9 +20,12 @@ $(document).ready(function() {
 
     elementArray.forEach(function(number) {
     console.log(number);
-    if (number === 10) {
+    if (number === 6) {
       $("#pleasework").text("BEEP");
       // $("#beepoutput").show();
+    }
+    else if (number === 12) {
+      $("#pleasework").append(" test");
     }
 
   });
