@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     var numberInput = parseInt($("#number").val());
     var nameInput = $("#name").val();
-    var total = 0;
+    // var total = 0;
     var endInput = [];
     var elementArray = [];
 
@@ -19,7 +19,8 @@ $(document).ready(function() {
     endInput.forEach(function(element) {
     elementArray.push(element);
     })
-
+    console.log(elementArray);
+    
     elementArray.forEach(function(number) {
       var characters = number.toString().split(" ");
       characters.forEach(function(character) {
