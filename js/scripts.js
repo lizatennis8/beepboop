@@ -29,7 +29,7 @@ $(document).ready(function() {
     } else if (character.match(/[1]/)) {
       $("#thebigreveal").append(" BOOP");
     } else if (character.match(/[0]/)) {
-      $("#pleasework").append(" BEEP");
+      $("#thebigreveal").append(" BEEP");
     } else {
       $("#thebigreveal").append(" " + number);
     }
