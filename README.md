@@ -12,7 +12,7 @@ _This program is a creepy little game called beep boop. It will ask you to enter
 
 * _Program uses the input to set the cap for a range of numbers starting at 0 and increasing by 2. The program takes the range and converts each number within it into an output based on the rules below._
 
-*_Program replaces numbers divisible by 3 with "I'm sorry, (name entered) I'm afraid I can't do that._
+* _Program replaces numbers divisible by 3 with "I'm sorry, (name entered) I'm afraid I can't do that._
 * _-Example number: 15_
 * _-Example name: Liza_
 * _-Example Output: ["I'm sorry, Liza. I'm afraid I can't do that."]_
@@ -28,6 +28,12 @@ _This program is a creepy little game called beep boop. It will ask you to enter
 * _Program leaves the numbers in the range as they are if they are not divisible by 3, do not have a 1 or do not have a 0_
 * _-Example number: 38_
 * _-Example Output: ["BEEP"]_
+
+* _Example Input/Output containing all output elements:_
+* _Example number input: 44_
+* _Example name input: Liza_
+* _Produced range: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44]
+* _Example output: I'm sorry, Liza. I'm afraid I can't do that. 2 4 I'm sorry, Liza. I'm afraid I can't do that. 8 BOOP I'm sorry, Liza. I'm afraid I can't do that. BOOP BOOP I'm sorry, Liza. I'm afraid I can't do that. BEEP 22 I'm sorry, Liza. I'm afraid I can't do that. 26 28 I'm sorry, Liza. I'm afraid I can't do that. 32 34 I'm sorry, Liza. I'm afraid I can't do that. 38 BEEP I'm sorry, Liza. I'm afraid I can't do that. 44_
 
 ## Setup/Installation Requirements
 

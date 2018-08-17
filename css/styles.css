@@ -1,0 +1,39 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Noticia Text', serif;
+
+}
+h2{
+  color: #22968e;
+  font-family: 'Russo One', sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: black;
+}
+#questions{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  font-size: 18px;
+  color: #22968e;
+}
+#thebigreveal{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}

@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     var numberInput = parseInt($("#number").val());
     var nameInput = $("#name").val();
-    // var total = 0;
     var endInput = [];
     var elementArray = [];
 
@@ -20,19 +19,19 @@ $(document).ready(function() {
     elementArray.push(element);
     })
     console.log(elementArray);
-    
+
     elementArray.forEach(function(number) {
       var characters = number.toString().split(" ");
       characters.forEach(function(character) {
 
       if (number % 3 === 0) {
-      $("#pleasework").append(" I'm sorry, " + nameInput + ". I'm afraid I can't do that.");
+      $("#thebigreveal").append(" I'm sorry, " + nameInput + ". I'm afraid I can't do that.");
     } else if (character.match(/[1]/)) {
-      $("#pleasework").append(" BOOP");
+      $("#thebigreveal").append(" BOOP");
     } else if (character.match(/[0]/)) {
       $("#pleasework").append(" BEEP");
     } else {
-      $("#pleasework").append(" " + number);
+      $("#thebigreveal").append(" " + number);
     }
       })
     });
