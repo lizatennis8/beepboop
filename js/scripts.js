@@ -8,9 +8,11 @@ $(document).ready(function() {
 
     if (numberInput === "0") {
       $("#beepoutput").show();
-    } 
+    } else if (numberInput === "1") {
+      $("#boopoutput").show();
+    }
 
-    $("#questions").hide();
+    // $("#questions").hide();
     event.preventDefault();
   });
 });
