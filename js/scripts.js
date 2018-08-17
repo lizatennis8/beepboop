@@ -25,7 +25,7 @@ $(document).ready(function() {
       // $("#beepoutput").show();
     }
     else if (number === 12) {
-      $("#pleasework").append(" test");
+      $("#pleasework").append(" " + number);
     }
 
   });
