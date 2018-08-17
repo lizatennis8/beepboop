@@ -8,12 +8,16 @@ $(document).ready(function() {
     var nameInput = $("#name").val();
     var total = 0;
     var numberRange = [numberInput, numberInput * 2, numberInput + 10];
+    var endInput = [];
 
     for (var i = 0; i < numberInput; i += 5) {
       var bunchGuys = [i];
-      console.log(bunchGuys);
+      bunchGuys.forEach(function(unit) {
+      endInput.push(unit);
+      })
     }
 
+console.log(endInput);
 
     $(".name").text(nameInput);
 
