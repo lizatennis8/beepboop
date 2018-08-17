@@ -1,10 +1,18 @@
 $(document).ready(function() {
   $("#questions").submit(function(event) {
 
+// for (var index = 2; index <= numberInput; index += 6) {
+// var range = [];
+
     var numberInput = parseInt($("#number").val());
     var nameInput = $("#name").val();
     var total = 0;
     var numberRange = [numberInput, numberInput * 2, numberInput + 10];
+
+    for (var i = 0; i < numberInput; i += 5) {
+      var bunchGuys = [i];
+      console.log(bunchGuys);
+    }
 
 
     $(".name").text(nameInput);
@@ -22,7 +30,7 @@ $(document).ready(function() {
     elementArray.forEach(function(number) {
       var characters = number.toString().split(" ");
       // console.log(characters);
-      console.log(number);
+      // console.log(number);
       characters.forEach(function(character) {
 
       if (character % 3 === 0) {
