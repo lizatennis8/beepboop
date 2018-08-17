@@ -12,36 +12,34 @@ $(document).ready(function() {
     var elementArray = [];
     numberRange.forEach(function(element) {
     elementArray.push(element);
-    //
-    // console.log(element);
-      })
 
-    // console.log(elementArray);
+      })
+// console.log(elementArray);
+
+
+
 
     elementArray.forEach(function(number) {
-    console.log(number);
+      var characters = number.toString().split(" ");
+      // console.log(characters);
+      console.log(number);
+      characters.forEach(function(character) {
 
-      if (number % 3 === 0) {
+      if (character % 3 === 0) {
       $("#pleasework").append(" I'm sorry, " + nameInput + ". I'm afraid I can't do that.");
-    } else if (number === 0) {
+    } else if (character.match(/[0]/)) {
       $("#pleasework").append(" BEEP");
-    } else if (number === 12) {
+    } else if (character.match(/[1]/)) {
       $("#pleasework").append(" BOOP");
     } else {
       $("#pleasework").append(" " + number);
     }
-    // else if (number % 3 === 0) {
-    //   $("#pleasework").append("I'm sorry Dave");
-    // }
-
+})
   });
 
-    // else if (numberInput === "1") {
-    //   $("#boopoutput").show();
-    // } else if (numberInput === "20") {
-    //   $(index).text();
-    // }
 
+  // var digit = number.toString().split('');
+  // console.log(digit);
 
 
     // $("#questions").hide();
