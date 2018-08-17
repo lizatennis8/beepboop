@@ -1,6 +1,6 @@
 # _Track Suggester_
 
-#### _Liza's Week 3 Project: LINK 8/17/2018_
+#### _Liza's Beep Boop Project: LINK 8/17/2018_
 
 #### By _**Liza Tennis**_
 
