@@ -5,15 +5,23 @@ $(document).ready(function() {
     var nameInput = $("#name").val();
     var total = 0;
     var numberRange = [numberInput, numberInput * 2, numberInput + 10];
-    console.log(numberRange);
+
 
     $(".name").text(nameInput);
 
+    var elementArray = [];
     numberRange.forEach(function(element) {
+    elementArray.push(element);
+    //
+    // console.log(element);
+      })
 
-    if (element === 0) {
+    
+
+    console.log(elementArray);
+    if (numberInput === 0) {
       $("#beepoutput").show();
-    } 
+    }
 
     // else if (numberInput === "1") {
     //   $("#boopoutput").show();
@@ -21,7 +29,7 @@ $(document).ready(function() {
     //   $(index).text();
     // }
 
-    })
+
 
     // $("#questions").hide();
     event.preventDefault();
