@@ -16,12 +16,16 @@ $(document).ready(function() {
     // console.log(element);
       })
 
-    
+    // console.log(elementArray);
 
-    console.log(elementArray);
-    if (numberInput === 0) {
-      $("#beepoutput").show();
+    elementArray.forEach(function(number) {
+    console.log(number);
+    if (number === 10) {
+      $("#pleasework").text("BEEP");
+      // $("#beepoutput").show();
     }
+
+  });
 
     // else if (numberInput === "1") {
     //   $("#boopoutput").show();
